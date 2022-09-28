@@ -7,9 +7,9 @@ class Currency {
   // Hint: Look at the type of values being passed when `new Currency()`
   // is called below.
 
-  readonly name: string = "";
-  readonly code: string = "";
-  readonly symbol: string = "";
+  private name: string;
+  private code: string;
+  private symbol: string;
 
   // Add types to the constructor parameters.
 
@@ -28,7 +28,7 @@ class Currency {
   // Add a return type for this method
   // Hint: Look at the inferred return type.
 
-  public describe() {
+  public describe(): void {
     // Replace the `null` values below with the appropriate field values.
     // Hint: Access field values with: this.fieldName
 
@@ -37,7 +37,7 @@ class Currency {
     description += `and uses the symbol ${this.symbol}.`;
 
     console.log(description);
-    return description;
+    // se aggiungo return description mi restituisce (giustamente) :string
   }
 }
 
