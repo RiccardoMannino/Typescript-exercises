@@ -13,9 +13,9 @@ interface Country {
 // Change the `PartialCountry` type to use the `Partial` utility type.
 // This should fix the type error for the `countryA` object.
 
-type PartialCountry = Country;
+type PartialCountry = Partial<Country>;
 
-const countryA: Partial<PartialCountry> = {
+const countryA: PartialCountry = {
   code: "CN",
   population: 1_412_600_000,
 };
